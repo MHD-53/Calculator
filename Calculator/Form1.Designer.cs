@@ -77,53 +77,61 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 24);
+            this.label1.Size = new System.Drawing.Size(162, 24);
             this.label1.TabIndex = 6;
-            this.label1.Text = "MHD";
+            this.label1.Text = "MHD\'s Calculator";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
             this.button2.Location = new System.Drawing.Point(211, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 40);
             this.button2.TabIndex = 2;
-            this.button2.Text = "T";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "__";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Location = new System.Drawing.Point(261, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 40);
             this.button1.TabIndex = 1;
-            this.button1.Text = "T";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "#";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_exit
             // 
-            this.btn_exit.BackColor = System.Drawing.Color.Red;
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_exit.FlatAppearance.BorderSize = 0;
             this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_exit.ForeColor = System.Drawing.Color.Black;
+            this.btn_exit.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_exit.Location = new System.Drawing.Point(311, 0);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(50, 40);
             this.btn_exit.TabIndex = 0;
-            this.btn_exit.Text = "Ex";
+            this.btn_exit.Text = "X";
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
@@ -238,6 +246,7 @@
             this.btn_min.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_min.FlatAppearance.BorderSize = 0;
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_min.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_min.Location = new System.Drawing.Point(220, 195);
             this.btn_min.Name = "btn_min";
             this.btn_min.Size = new System.Drawing.Size(65, 88);
@@ -254,6 +263,7 @@
             this.btn_mul.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_mul.FlatAppearance.BorderSize = 0;
             this.btn_mul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mul.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mul.Location = new System.Drawing.Point(220, 101);
             this.btn_mul.Name = "btn_mul";
             this.btn_mul.Size = new System.Drawing.Size(65, 88);
@@ -270,6 +280,7 @@
             this.btn_add.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_add.FlatAppearance.BorderSize = 0;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.Location = new System.Drawing.Point(220, 289);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(65, 89);
@@ -286,6 +297,7 @@
             this.btn_point.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_point.FlatAppearance.BorderSize = 0;
             this.btn_point.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_point.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_point.Location = new System.Drawing.Point(149, 289);
             this.btn_point.Name = "btn_point";
             this.btn_point.Size = new System.Drawing.Size(65, 89);
@@ -303,6 +315,7 @@
             this.btn_0.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_0.FlatAppearance.BorderSize = 0;
             this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_0.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_0.Location = new System.Drawing.Point(7, 289);
             this.btn_0.Name = "btn_0";
             this.btn_0.Size = new System.Drawing.Size(136, 89);
@@ -319,6 +332,7 @@
             this.btn_3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_3.FlatAppearance.BorderSize = 0;
             this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_3.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_3.Location = new System.Drawing.Point(149, 195);
             this.btn_3.Name = "btn_3";
             this.btn_3.Size = new System.Drawing.Size(65, 88);
@@ -335,6 +349,7 @@
             this.btn_2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_2.FlatAppearance.BorderSize = 0;
             this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_2.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_2.Location = new System.Drawing.Point(78, 195);
             this.btn_2.Name = "btn_2";
             this.btn_2.Size = new System.Drawing.Size(65, 88);
@@ -351,6 +366,7 @@
             this.btn_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_1.FlatAppearance.BorderSize = 0;
             this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_1.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_1.Location = new System.Drawing.Point(7, 195);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(65, 88);
@@ -367,6 +383,7 @@
             this.btn_6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_6.FlatAppearance.BorderSize = 0;
             this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_6.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_6.Location = new System.Drawing.Point(149, 101);
             this.btn_6.Name = "btn_6";
             this.btn_6.Size = new System.Drawing.Size(65, 88);
@@ -383,6 +400,7 @@
             this.btn_5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_5.FlatAppearance.BorderSize = 0;
             this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_5.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_5.Location = new System.Drawing.Point(78, 101);
             this.btn_5.Name = "btn_5";
             this.btn_5.Size = new System.Drawing.Size(65, 88);
@@ -399,6 +417,7 @@
             this.btn_4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_4.FlatAppearance.BorderSize = 0;
             this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_4.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_4.Location = new System.Drawing.Point(7, 101);
             this.btn_4.Name = "btn_4";
             this.btn_4.Size = new System.Drawing.Size(65, 88);
@@ -415,6 +434,7 @@
             this.btn_8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_8.FlatAppearance.BorderSize = 0;
             this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_8.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_8.Location = new System.Drawing.Point(78, 7);
             this.btn_8.Name = "btn_8";
             this.btn_8.Size = new System.Drawing.Size(65, 88);
@@ -431,6 +451,7 @@
             this.btn_7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_7.FlatAppearance.BorderSize = 0;
             this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_7.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_7.Location = new System.Drawing.Point(7, 7);
             this.btn_7.Name = "btn_7";
             this.btn_7.Size = new System.Drawing.Size(65, 88);
@@ -447,6 +468,7 @@
             this.btn_9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_9.FlatAppearance.BorderSize = 0;
             this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_9.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_9.Location = new System.Drawing.Point(149, 7);
             this.btn_9.Name = "btn_9";
             this.btn_9.Size = new System.Drawing.Size(65, 88);
@@ -463,6 +485,7 @@
             this.btn_div.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_div.FlatAppearance.BorderSize = 0;
             this.btn_div.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_div.Font = new System.Drawing.Font("Gadugi", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_div.Location = new System.Drawing.Point(220, 7);
             this.btn_div.Name = "btn_div";
             this.btn_div.Size = new System.Drawing.Size(65, 88);
@@ -476,7 +499,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3;
+            this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1

@@ -109,7 +109,7 @@ namespace Calculator
 
             catch (Exception)
             {
-                txb_display.Text="Error";
+                txb_display.Text="عملية خاطئة";
             }
         }
 
@@ -127,12 +127,15 @@ namespace Calculator
 
         private void btn_ce_Click(object sender, EventArgs e)
         {
-            
+            if (txb_display.Text.Length > 0)
+            {
+                txb_display.Text = txb_display.Text.Remove(txb_display.Text.Length - 1);
+            }
         }
 
         private void btn_c_Click(object sender, EventArgs e)
         {
-            
+            txb_display.Text = "";
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -150,6 +153,23 @@ namespace Calculator
         {
             Button btn = (Button)sender;
             btn.BackColor = Color.FromArgb(60,60,60);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+                {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
