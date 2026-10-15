@@ -109,7 +109,7 @@ namespace Calculator
 
             catch (Exception)
             {
-                txb_display.Text="عملية خاطئة";
+                txb_display.Text="Wrong Operation";
             }
         }
 
