@@ -174,6 +174,7 @@ namespace Calculator
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // Timer colors
             if (r>0 && b==0 ) { r-- ; g++ ; }
             else if (g>0 && r==0) { g-- ; b++ ; }
             else if (b>0 && g==0) { b-- ; r++ ; }
